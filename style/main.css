@@ -1,0 +1,704 @@
+/*공통*/
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #8e8e8e;
+  text-decoration: none;
+  background-color: #fafafa;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+a,
+.id,
+button,
+li {
+  font: 14px;
+  line-height: 18px;
+}
+.profile-image {
+  position: relative;
+  border-radius: 50%;
+}
+.id {
+  font-size: 14px;
+  color: #262626;
+  font-weight: 600;
+  line-height: 18px;
+  cursor: pointer;
+}
+/* 데코 없애기 */
+body ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+}
+.canvas-box {
+  padding: 0;
+}
+
+/*메인*/
+#main {
+  position: relative;
+  display: flex;
+  max-width: 935px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+/*왼쪽 메인 컨테이너(스토리+다이얼로그)*/
+.main-container {
+  box-sizing: border-box;
+  max-width: 614px;
+  width: 100%;
+  height: auto;
+  margin-right: 28px;
+  display: flex;
+  flex-direction: column;
+}
+/*스토리*/
+.story-box {
+  position: relative;
+  box-sizing: inherit;
+  max-width: inherit;
+  width: inherit;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #ffffff;
+  height: 118px;
+  padding: 16px 0;
+  margin-bottom: 24px;
+  z-index: -1;
+}
+.story-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  max-width: 612px;
+  width: 100%;
+  height: 84px;
+  overflow: hidden;
+}
+.blank-list {
+  width: 10px;
+  height: auto;
+}
+.story-button {
+  position: relative;
+  width: 72px;
+  height: inherit;
+  padding: 0 4px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+.story-image-box {
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.story.canvas-box {
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  background: linear-gradient(
+    225deg,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d,
+    #f56040,
+    #f77737,
+    #fcaf45,
+    #ffdc80
+  );
+  border-radius: 50%;
+}
+.story.profile-image.border {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #ffffff;
+}
+.story.profile-image {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+}
+.story.profile-image::after {
+  content: "";
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.story-id {
+  color: #262626;
+  letter-spacing: 0.01em;
+  max-width: 64px;
+  width: 100%;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  top: 68px;
+  cursor: pointer;
+}
+.story-arrow-button {
+  z-index: 3;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.story-arrow {
+  width: 45px;
+  height: 45px;
+}
+.story-arrow-button.left {
+  left: 0;
+}
+.story-arrow-button.right {
+  right: 0;
+}
+.story-arrow.left {
+  background-image: url(../img/icon2.png);
+  background-repeat: no-repeat;
+  background-size: 510px 477px;
+  background-position: -291px -223px;
+}
+.story-arrow.right {
+  background-image: url(../img/icon2.png);
+  background-repeat: no-repeat;
+  background-size: 510px 477px;
+  background-position: -291px -269px;
+}
+/*다이얼로그*/
+#dialogue {
+  box-sizing: border-box;
+  max-width: 614px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.feed {
+  max-width: inherit;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #ffffff;
+  margin-bottom: 60px;
+}
+
+.feed-header {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: 614px;
+  width: 100%;
+  height: 60px;
+  padding: 16px;
+  border-bottom: 1px solid #dbdbdb;
+}
+.header.profile-image-box {
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+.header.canvas-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 42px;
+  height: 42px;
+}
+.header.profile-image.border {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 32px;
+  width: 32px;
+}
+.header.profile-image {
+  position: absolute;
+  height: 32px;
+  width: 32px;
+}
+.header.profile-image::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.header-id-place-option {
+  width: 100%;
+  display: flex;
+  justify-items: space-between;
+  margin-left: 14px;
+}
+.header-id-place {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #262626;
+}
+.header.id:hover {
+  text-decoration: underline;
+}
+.header-place {
+  cursor: pointer;
+  font-size: 12px;
+}
+.option-button {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  padding: 8px;
+}
+.option {
+  width: 16px;
+  height: 16px;
+}
+
+.content-img > img {
+  width: 100%;
+  height: 100%;
+}
+
+.feed-icon-section {
+  position: relative;
+  box-sizing: border-box;
+  max-width: inherit;
+  width: inherit;
+  display: block;
+  height: 40px;
+  margin-top: 4px;
+  padding: 0 16px;
+}
+.feed-icon-box {
+  margin-left: -8px;
+}
+.feed-icon-btn {
+  display: inline-block;
+  padding: 8px;
+  cursor: pointer;
+}
+.feed-icon-section:first-child {
+  padding-left: -8px;
+}
+.feed-icon {
+  width: 24px;
+  height: 24px;
+}
+.feed-icon.like {
+  margin-left: -8px;
+}
+.feed-icon.like-fill {
+  fill: rgb(237, 73, 86);
+}
+.feed-icon-box.bookmark {
+  position: absolute;
+  right: 10px;
+}
+
+.like-number {
+  font-weight: 600;
+  color: #262626;
+  font-size: 14px;
+  padding: 0 16px;
+  margin-bottom: 8px;
+}
+
+.conversation-box {
+  min-height: 22px;
+  min-width: 0;
+  color: #262626;
+  padding: 0 16px;
+  overflow-wrap: break-word;
+}
+.writing {
+  font-size: 14px;
+  line-height: 18px;
+}
+.show-more {
+  overflow-wrap: break-word;
+}
+
+.number-time-before {
+  color: #8e8e8e;
+  font-size: 10px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  display: block;
+  max-width: inherit;
+  height: 19px;
+  width: inherit;
+  padding-left: 16px;
+  margin-bottom: 4px;
+}
+
+.comment-section {
+  position: relative;
+  box-sizing: border-box;
+  max-width: inherit;
+  width: inherit;
+  max-height: 80px;
+  min-height: 55px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  margin-top: 4px;
+  border-top: 1px solid #dbdbdb;
+}
+.emoji-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  padding: 8px 16px 8px 0;
+}
+.comment-textarea {
+  display: inline-block;
+  width: 100%;
+  max-height: 80px;
+  min-height: 18px;
+  height: 18px;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  padding: 0;
+}
+textarea::placeholder {
+  font-size: 14px;
+}
+.upload-button {
+  white-space: nowrap;
+  position: relative;
+  margin-right: 0;
+  font-weight: 600;
+  color: #0095f6;
+  opacity: 0.3;
+}
+
+/*오른쪽 사이드 컨테이너*/
+.side-container {
+  position: sticky;
+  max-width: 293px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+/*나의 프로필*/
+.my-profile {
+  position: relative;
+  height: 56px;
+  display: flex;
+  justify-items: flex-start;
+  align-items: center;
+  padding: 18px 0 10px;
+  width: 100%;
+}
+.my.profile-image-box {
+  position: relative;
+  width: 54px;
+  height: 54px;
+}
+.my.canvas-box {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.my.profile-image.border {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.my.profile-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+}
+.my.profile-image::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 54px;
+  height: 54px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.my-profile-text {
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+/*다른 프로필 제안*/
+.suggestion {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  width: 100%;
+}
+#suggestion-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(var(--f52, 142, 142, 142), 1);
+}
+#show-all {
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  color: #262626;
+  padding: 0;
+}
+.others-profile {
+  width: inherit;
+  padding: 8px 0;
+}
+.others-list {
+  padding: 0;
+  margin: 0;
+}
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  height: 32px;
+}
+.follow-button {
+  font-size: 12px;
+  font-weight: 600;
+  color: #0095f6;
+  cursor: pointer;
+}
+.others-img-id-info-box {
+  display: flex;
+  align-items: center;
+  box-sizing: content-box;
+}
+.others.profile-image-box {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  margin-right: 5px;
+}
+.others.canvas-box {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+}
+.others.profile-image.border {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.others.profile-image {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+.others.profile-image::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.others.id-info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+}
+.others.id {
+  margin: -3px 0 -4px;
+}
+.others.id:hover {
+  text-decoration: underline;
+}
+.others-info {
+  margin-top: 6px;
+  font-size: 12px;
+  overflow: visible;
+  line-height: 14px;
+}
+.others-list-button {
+  margin-left: 8px;
+}
+/*푸터*/
+#footer {
+  margin-top: 20px;
+}
+#footer-list-box {
+  margin: 0 0 19px 0;
+  padding: 0;
+}
+.footer-list {
+  display: flex;
+  line-height: 18px;
+}
+.footer-list li {
+  white-space: nowrap;
+  color: #c7c7c7;
+  font-size: 11px;
+  margin: 0;
+}
+.footer-list li::after {
+  content: "∙";
+  margin: 0 0.25em 0 0.25em;
+}
+#footer-copyright {
+  color: rgba(var(--edc, 199, 199, 199), 1);
+  font-size: 11px;
+  font-weight: 400;
+}
+/*nav*/
+#nav-body {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 54px;
+  border-bottom: 1px solid #dbdbdb;
+  transition-property: height;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  order: -1;
+  background-color: white;
+}
+nav {
+  display: flex;
+  justify-items: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 935px;
+  height: 100%;
+  padding: 0 20px;
+}
+.nav-logo {
+  max-width: 360px;
+  width: 100%;
+  height: 36px;
+  left: 0;
+}
+#instagram-logo {
+  width: 103px;
+  height: 29px;
+  margin-top: 7px;
+}
+#instagram-logo:active {
+  opacity: 0.5;
+}
+.nav-search-box {
+  position: relative;
+  width: 215px;
+  height: 28px;
+}
+#search {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+#search-icon {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../img/icon.png);
+  background-repeat: no-repeat;
+  background-size: 440px 411px;
+  background-position: -428px -241px;
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+}
+#search-label {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(var(--f52, 142, 142, 142), 1);
+}
+#search-input {
+  position: relative;
+  width: 177px;
+  height: 20px;
+  padding: 3px 10px 3px 26px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #fafafa;
+}
+.nav-menu {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 360px;
+  width: 100%;
+  height: 22px;
+  margin-left: auto;
+}
+.nav-icon {
+  width: 22px;
+  height: 22px;
+}
+.nav-icon-btn {
+  width: 22px;
+  height: 22px;
+  margin-left: 22px;
+  cursor: pointer;
+}
