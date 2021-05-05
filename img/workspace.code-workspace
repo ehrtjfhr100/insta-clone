@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../web"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "westagram",
+		"liveServer.settings.port": 5501
+	}
+}

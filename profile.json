@@ -1,0 +1,98 @@
+{"contents":{
+	"story":[
+		{
+			"id": "__leejune",
+			"imgSrc": "img/pic/leejune.jpeg"	
+		},
+		{
+			"id": "yoojin_jung",
+			"imgSrc": "img/pic/jungyujin.jpeg"
+		},
+		{
+			"id": "1._.star_",
+			"imgSrc": "img/pic/1star.jpeg"
+		},
+		{
+			"id": "_april_lee_",
+			"imgSrc": "img/pic/aprillee.jpeg"	
+		},
+		{
+			"id": "janekinm",
+			"imgSrc": "img/pic/janekim.jpeg"
+		},
+		{
+			"id": "hips_gang",
+			"imgSrc": "img/pic/hipsgang.jpeg"
+		},
+		{
+			"id": "rohmi__s",
+			"imgSrc": "img/pic/rohmis.jpeg"
+		},
+		{
+			"id": "dawooni.gang",
+			"imgSrc": "img/pic/dawooni.jpeg"	
+		}
+	],
+	"dialogue": [
+		{
+			"id": "sun_sun_park",
+			"imgSrc": "img/pic/sunsunpark.jpeg",
+			"feed": {
+				"place": "아트큐브",
+				"photo": "img/pic/sunsunparkfeed.jpeg",
+				"comment": "아침이 되면 사라질 거예요 90.9x65.1cm_oil on canvas_2021"
+			}
+		},
+		{
+			"id": "hin_dung__2",
+			"imgSrc": "img/pic/hindung.jpeg",
+			"feed": {
+				"place":"",
+				"photo":"img/pic/hindungfeed.jpeg",
+				"comment":"싸이버펑크"
+			}
+		},
+		{
+			"id": "yookyung9",
+			"imgSrc": "img/pic/yookyung9.jpeg",
+			"feed": {
+				"place": "뮤지엄 헤드",
+				"photo": "img/pic/yookyung9feed.jpeg",
+				"comment": "최태훈, <라크 인간 Human LARK>"
+			}
+		}
+	],
+	"side": [
+		{
+			"id": "ssinnann_jun",
+			"imgSrc": "img/pic/jjj.jpeg",	
+			"info": "Instagram 신규가입"
+		},
+		{
+			"id": "hyeeiikatjoo",
+			"imgSrc": "img/pic/hyezoo.jpeg",	
+			"info": "ji_iiiiiiho님 외 12명이 팔로우합니다"
+		},
+		{
+			"id": "minji.melliey",
+			"imgSrc": "img/pic/minzoo.jpeg",
+			"info": "jieun_izzy님 외 3명이 팔로우합니다"
+		},
+		{
+			"id": "youcanpraise",
+			"imgSrc": "img/pic/chanyang.jpeg",
+			"info": "회원님을 팔로우합니다"
+		},
+		{
+			"id": "moonlight._.ssa0518",
+			"imgSrc": "img/pic/moonlight.jpeg",		
+			"info": "sieun.ee_님 외 4명이 팔로우합니다"		
+		}
+	],
+	"my": {
+		"id": "ununununu_s",
+		"name": "송은우",
+		"imgSrc":"img/pic/unu.jpeg"
+	}
+}
+}

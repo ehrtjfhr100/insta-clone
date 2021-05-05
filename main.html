@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Instagram</title>
+    <link rel="shortcut icon" href="img/instagram.ico" type="image/x-icon"/>
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <main id="main">
+      <!--메인 컨테이너-->      
+      <div class="main-container">
+        <!--메인 컨테이너 > 스토리 박스-->
+        <div class="story-box">
+          <ul class="story-list">
+            <li class="blank-list"></li>
+            <li class="story-button">
+              <div class="story-image-box">
+                <div class="story canvas-box"></div>
+                <span class="story profile-image border">
+                 <!-- <img class="story profile-image" src="array[i]"/>-->
+                </span>
+              </div>
+              <div class="story-id"></div>
+            </li>
+            <li class="story-button">
+              <div class="story-image-box">
+                <div class="story canvas-box"></div>
+                <span class="story profile-image border">
+                 <!-- <img class="story profile-image" src="array[i]"/>-->
+                </span>
+              </div>
+              <div class="story-id"></div>
+            </li>
+            <li class="story-button">
+              <div class="story-image-box">
+                <div class="story canvas-box"></div>
+                <span class="story profile-image border">
+                 <!-- <img class="story profile-image" src="array[i]"/>-->
+                </span>
+              </div>
+              <div class="story-id"></div>
+            </li>
+            <li class="story-button">
+              <div class="story-image-box">
+                <div class="story canvas-box"></div>
+                <span class="story profile-image border">
+                 <!-- <img class="story profile-image" src="array[i]"/>-->
+                </span>
+              </div>
+              <div class="story-id"></div>
+            </li>
+            <li class="story-button">
+              <div class="story-image-box">
+                <div class="story canvas-box"></div>
+                <span class="story profile-image border">
+                 <!-- <img clasf\s="story profile-image" src="array[i]"/>-->
+                </span>
+              </div>
+              <div class="story-id"></div>
+            </li>
+            <li class="story-button">
+              <div class="story-image-box">
+                <div class="story canvas-box"></div>
+                <span class="story profile-image border">
+                 <!-- <img class="story profile-image" src="array[i]"/>-->
+                </span>
+              </div>
+              <div class="story-id"></div>
+            </li>
+            <li class="story-button">
+              <div class="story-image-box">
+                <div class="story canvas-box"></div>
+                <span class="story profile-image border">
+                 <!-- <img class="story profile-image" src="array[i]"/>-->
+                </span>
+              </div>
+              <div class="story-id"></div>
+            </li>
+            <li class="story-button">
+              <div class="story-image-box">
+                <div class="story canvas-box"></div>
+                <span class="story profile-image border">
+                 <!-- <img class="story profile-image" src="array[i]"/>-->
+                </span>
+              </div>
+              <div class="story-id"></div>
+            </li>
+            <li class="blank-list"></li>
+          </ul>
+          <button class="story-arrow-button left">
+            <div class="story-arrow left"></div>
+          </button>
+          <button class="story-arrow-button right">
+            <div class="story-arrow right"></div>
+          </button>
+        </div>
+        <!--메인 컨테이너 > 다이알로그-->
+        <div id="dialogue">
+          <!--첫번째 피드-->
+          <div class="feed">
+
+            <div class="feed-header">
+              <div class="header profile-image-box">
+                <div class="header canvas-box"></div>
+                <span class="header profile-image border">
+                 <!--  <img class="header profile-image"/> -->
+                </span>
+              </div>
+              <div class="header-id-place-option">
+                <div class="header-id-place">
+                   <span class="header id"></span>
+                   <span class="header-place"></span>
+                </div>
+                <button class="option-button">
+                  <svg class="option" viewbox="0,0,48,48">
+                    <circle clip-rule="evenodd" cx="8" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                    <circle clip-rule="evenodd" cx="24" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                    <circle clip-rule="evenodds" cx="40" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            
+            <div class="content-img">
+           <!-- <img alt="photo by 박해선" src=""/> -->
+            </div>            
+
+            <div class="feed-icon-section">
+              <span class="feed-icon-box">
+                <button class="feed-icon-btn">
+                  <svg class="feed-icon like-default" viewBox="0 0 48 48">
+                    <path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path>
+                  </svg>
+                </button>
+              </span>
+              <span class="feed-icon-box">
+                <button class="feed-icon-btn">
+                  <svg class="feed-icon comment" viewBox="0 0 48 48">
+                    <path d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"></path>
+                  </svg>
+                </button>
+              </span>
+              <span class="feed-icon-box">
+                <button class="feed-icon-btn">
+                  <svg class="feed-icon dm" viewBox="0 0 48 48">
+                    <path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path>
+                  </svg>
+                </button>
+              </span>  
+              <span class="feed-icon-box bookmark">
+                <button class="feed-icon-btn">
+                  <svg class="feed-icon bookmark" viewBox="0 0 48 48">
+                    <path d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"></path>
+                  </svg>
+                </button>
+              </span>
+            </div>
+
+            <div class="like-number">
+              좋아요 <span>32</span>개
+            </div>
+
+            <div class="conversation-box">
+              <a class="writer id"></a>
+              <span class="writing"></span>
+              <button class="show-more"></button>
+            </div>
+
+            <div class="number-time-before">
+              <span>21시간 전</span>
+            </div>
+            <div class="comment-section">
+              <button class="emoji-icon-button">
+                <svg class="emoji-icon" viewbox="0,0,48,48">
+                  <path d="M24 48C10.8 48 0 37.2 0 24S10.8 0 24 0s24 10.8 24 24-10.8 24-24 24zm0-45C12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21S35.6 3 24 3z"></path>
+                  <path d="M34.9 24c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5zm-21.8 0c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5-2.5-1.1-2.5-2.5zM24 37.3c-5.2 0-8-3.5-8.2-3.7-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2.1.1 2.1 2.5 5.8 2.5 3.7 0 5.8-2.5 5.8-2.5.5-.6 1.5-.7 2.1-.2.6.5.7 1.5.2 2.1 0 .2-2.8 3.7-8 3.7z"></path>
+                </svg>
+              </button>
+              <textarea row="4" placeholder="댓글달기..." class="comment-textarea"></textarea>
+              <button class="upload-button">
+                게시
+              </button>
+            </div>
+
+          </div>
+          <!--두번째 피드-->
+          <div class="feed">
+
+            <div class="feed-header">
+              <div class="header profile-image-box">
+                <div class="header canvas-box"></div>
+                <span class="header profile-image border">
+                 <!--  <img class="header profile-image"/> -->
+                </span>
+              </div>
+              <div class="header-id-place-option">
+                <div class="header-id-place">
+                  <span class="header id"></span> 
+                  <span class="header-place"></span>
+                </div>
+                <button class="option-button">
+                  <svg class="option" viewbox="0,0,48,48">
+                    <circle clip-rule="evenodd" cx="8" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                    <circle clip-rule="evenodd" cx="24" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                    <circle clip-rule="evenodds" cx="40" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            
+            <div class="content-img">
+           <!-- <img alt="photo by 박해선" src=""/> -->
+            </div>            
+
+            <div class="feed-icon-section">
+              <span class="feed-icon-box">
+                <button class="feed-icon-btn">
+                  <svg class="feed-icon like-default" viewBox="0 0 48 48">
+                    <path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path>
+                  </svg>
+                </button>
+              </span>
+              <span class="feed-icon-box">
+                <button class="feed-icon-btn">
+                  <svg class="feed-icon comment" viewBox="0 0 48 48">
+                    <path d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"></path>
+                  </svg>
+                </button>
+              </span>
+              <span class="feed-icon-box">
+                <button class="feed-icon-btn">
+                  <svg class="feed-icon dm" viewBox="0 0 48 48">
+                    <path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path>
+                  </svg>
+                </button>
+              </span>  
+              <span class="feed-icon-box bookmark">
+                <button class="feed-icon-btn">
+                  <svg class="feed-icon bookmark" viewBox="0 0 48 48">
+                    <path d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"></path>
+                  </svg>
+                </button>
+              </span>
+            </div>
+
+            <div class="like-number">
+              좋아요 <span>32</span>개
+            </div>
+
+            <div class="conversation-box">
+              <a class="writer id"></a>
+              <span class="writing"></span>
+              <button class="show-more"></button>
+            </div>
+
+            <div class="number-time-before">
+              <span>21시간 전</span>
+            </div>
+            <div class="comment-section">
+              <button class="emoji-icon-button">
+                <svg class="emoji-icon" viewbox="0,0,48,48">
+                  <path d="M24 48C10.8 48 0 37.2 0 24S10.8 0 24 0s24 10.8 24 24-10.8 24-24 24zm0-45C12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21S35.6 3 24 3z"></path>
+                  <path d="M34.9 24c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5zm-21.8 0c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5-2.5-1.1-2.5-2.5zM24 37.3c-5.2 0-8-3.5-8.2-3.7-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2.1.1 2.1 2.5 5.8 2.5 3.7 0 5.8-2.5 5.8-2.5.5-.6 1.5-.7 2.1-.2.6.5.7 1.5.2 2.1 0 .2-2.8 3.7-8 3.7z"></path>
+                </svg>
+              </button>
+              <textarea row="4" placeholder="댓글달기..." class="comment-textarea"></textarea>
+              <button class="upload-button">
+                게시
+              </button>
+            </div>
+
+          </div>
+          <!--세번째 피드-->
+          <div class="feed">
+
+            <div class="feed-header">
+              <div class="header profile-image-box">
+                <div class="header canvas-box"></div>
+                <span class="header profile-image border">
+                 <!--  <img class="header profile-image"/> -->
+                </span>
+              </div>
+              <div class="header-id-place-option">
+                <div class="header-id-place">
+                  <span class="header id"></span> 
+                  <span class="header-place"></span>
+                </div>
+                <button class="option-button">
+                  <svg class="option" viewbox="0,0,48,48">
+                    <circle clip-rule="evenodd" cx="8" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                    <circle clip-rule="evenodd" cx="24" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                    <circle clip-rule="evenodds" cx="40" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            
+            <div class="content-img">
+           <!-- <img alt="photo by 박해선" src=""/> -->
+            </div>            
+
+            <div class="feed-icon-section">
+              <span class="feed-icon-box">
+                <button class="feed-icon-btn">
+                  <svg class="feed-icon like-default" viewBox="0 0 48 48">
+                    <path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path>
+                  </svg>
+                </button>
+              </span>
+              <span class="feed-icon-box">
+                <button class="feed-icon-btn">
+                  <svg class="feed-icon comment" viewBox="0 0 48 48">
+                    <path d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"></path>
+                  </svg>
+                </button>
+              </span>
+              <span class="feed-icon-box">
+                <button class="feed-icon-btn">
+                  <svg class="feed-icon dm" viewBox="0 0 48 48">
+                    <path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path>
+                  </svg>
+                </button>
+              </span>  
+              <span class="feed-icon-box bookmark">
+                <button class="feed-icon-btn">
+                  <svg class="feed-icon bookmark" viewBox="0 0 48 48">
+                    <path d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"></path>
+                  </svg>
+                </button>
+              </span>
+            </div>
+
+            <div class="like-number">
+              좋아요 <span>32</span>개
+            </div>
+
+            <div class="conversation-box">
+              <a class="writer id"></a>
+              <span class="writing"></span>
+              <button class="show-more"></button>
+            </div>
+
+            <div class="number-time-before">
+              <span>21시간 전</span>
+            </div>
+            <div class="comment-section">
+              <button class="emoji-icon-button">
+                <svg class="emoji-icon" viewbox="0,0,48,48">
+                  <path d="M24 48C10.8 48 0 37.2 0 24S10.8 0 24 0s24 10.8 24 24-10.8 24-24 24zm0-45C12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21S35.6 3 24 3z"></path>
+                  <path d="M34.9 24c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5zm-21.8 0c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5-2.5-1.1-2.5-2.5zM24 37.3c-5.2 0-8-3.5-8.2-3.7-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2.1.1 2.1 2.5 5.8 2.5 3.7 0 5.8-2.5 5.8-2.5.5-.6 1.5-.7 2.1-.2.6.5.7 1.5.2 2.1 0 .2-2.8 3.7-8 3.7z"></path>
+                </svg>
+              </button>
+              <textarea row="4" placeholder="댓글달기..." class="comment-textarea"></textarea>
+              <button class="upload-button">
+                게시
+              </button>
+            </div>
+
+          </div>
+
+        </div> <!--다이알로그-->
+      </div> <!---메인컨테이너-->
+      <!--사이드 컨테이너-->   
+      <div class="side-container">
+        <div class="my-profile">
+          <div class="my profile-image-box">
+            <div class="my canvas-box"></div>
+            <span class="my profile-image border">
+        <!---  <img class="my profile-image" alt="ununununu_s님의 프로필 사진"/> -->
+            </span>
+          </div>
+          <div class="my-profile-text">
+            <div class="my id"></div>
+            <div class="my-name"></div>
+          </div>
+        </div>
+
+        <div class="suggestion">
+          <span id="suggestion-text">회원님을 위한 추천</span>
+          <button id="show-all" class="example">모두보기</button>
+        </div>
+
+        <div class="others-profile">
+          <ul class="others-list">
+
+            <li class="profile">
+              <div class="others-img-id-info-box">
+                <div class="others profile-image-box">
+                  <div class="others canvas-box"></div>
+                  <span class="others profile-image border">
+               <!-- <img class="others profile-image"/> -->
+                  </span>
+                </div>
+                <div class="others id-info-box">
+                  <div class="others id"></div>
+                  <div class="others-info"></div>
+                </div>
+              </div>
+              <button class="follow-button">팔로우</button>
+            </li>
+
+            <li class="profile">
+              <div class="others-img-id-info-box">
+                <div class="others profile-image-box">
+                  <div class="others canvas-box"></div>
+                  <span class="others profile-image border">
+               <!-- <img class="others profile-image"/> -->
+                  </span>
+                </div>
+                <div class="others id-info-box">
+                  <div class="others id"></div>
+                  <div class="others-info"></div>
+                </div>
+              </div>
+              <button class="follow-button">팔로우</button>
+            </li>
+
+            <li class="profile">
+              <div class="others-img-id-info-box">
+                <div class="others profile-image-box">
+                  <div class="others canvas-box"></div>
+                  <span class="others profile-image border">
+               <!-- <img class="others profile-image"/> -->
+                  </span>
+                </div>
+                <div class="others id-info-box">
+                  <div class="others id"></div>
+                  <div class="others-info"></div>
+                </div>
+              </div>
+              <button class="follow-button">팔로우</button>
+            </li>
+
+            <li class="profile">
+              <div class="others-img-id-info-box">
+                <div class="others profile-image-box">
+                  <div class="others canvas-box"></div>
+                  <span class="others profile-image border">
+               <!-- <img class="others profile-image"/> -->
+                  </span>
+                </div>
+                <div class="others id-info-box">
+                  <div class="others id"></div>
+                  <div class="others-info"></div>
+                </div>
+              </div>
+              <button class="follow-button">팔로우</button>
+            </li>
+
+            <li class="profile">
+              <div class="others-img-id-info-box">
+                <div class="others profile-image-box">
+                  <div class="others canvas-box"></div>
+                  <span class="others profile-image border">
+               <!-- <img class="others profile-image"/> -->
+                  </span>
+                </div>
+                <div class="others id-info-box">
+                  <div class="others id"></div>
+                  <div class="others-info"></div>
+                </div>
+              </div>
+              <button class="follow-button">팔로우</button>
+            </li>
+          </ul>
+        </div>
+        <footer id="footer">
+          <ul id="footer-list-box">
+            <div class="footer-list">
+              <li>소개</li>
+              <li>도움말</li>
+              <li>홍보 센터</li>
+              <li>API</li>
+              <li>채용 정보</li>
+              <li>개인정보처리방침</li>
+            </div>
+            <div class="footer-list">
+              <li>약관</li>
+              <li>위치</li>
+              <li>인기 계정</li>
+              <li>해시태그</li>
+              <li>언어</li>
+            </div>
+          </ul>
+          <span id="footer-copyright">© 2021 INSTAGRAM FROM FACEBOOK</span>
+        </footer>
+      </div>
+    </main>
+    <div id="nav-body">
+      <nav>
+
+        <div class="nav-logo"><img id="instagram-logo" src="img/logo_text.png"/></div>
+        
+        <div class="nav-search-box">
+          <label id="search" for="search-input">
+            <span id="search-icon"></span>
+            <span id="search-label">검색</span>
+          </label>
+          <input id="search-input"></input>
+        </div>
+
+        <div class="nav-menu">
+          <button class="nav-icon-btn home">
+            <svg class="nav-icon home" viewbox="0,0,48,48">
+              <a href="#">
+                <path d="M45.5 48H30.1c-.8 0-1.5-.7-1.5-1.5V34.2c0-2.6-2.1-4.6-4.6-4.6s-4.6 2.1-4.6 4.6v12.3c0 .8-.7 1.5-1.5 1.5H2.5c-.8 0-1.5-.7-1.5-1.5V23c0-.4.2-.8.4-1.1L22.9.4c.6-.6 1.6-.6 2.1 0l21.5 21.5c.3.3.4.7.4 1.1v23.5c.1.8-.6 1.5-1.4 1.5z"></path>
+              </a>
+            </svg>
+          </button>
+          <button class="nav-icon-btn dm">
+            <svg class="nav-icon dm" viewbox="0,0,48,48">
+              <a href="#">
+                <path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path>
+              </a>
+            </svg>
+          </button>
+          <button class="nav-icon-btn explore">
+            <svg class="nav-icon explore" viewbox="0,0,48,48">
+              <a href="#">
+                <path d="M24 0C10.8 0 0 10.8 0 24s10.8 24 24 24 24-10.8 24-24S37.2 0 24 0zm0 45C12.4 45 3 35.6 3 24S12.4 3 24 3s21 9.4 21 21-9.4 21-21 21zm10.2-33.2l-14.8 7c-.3.1-.6.4-.7.7l-7 14.8c-.3.6-.2 1.3.3 1.7.3.3.7.4 1.1.4.2 0 .4 0 .6-.1l14.8-7c.3-.1.6-.4.7-.7l7-14.8c.3-.6.2-1.3-.3-1.7-.4-.5-1.1-.6-1.7-.3zm-7.4 15l-5.5-5.5 10.5-5-5 10.5z"></path>
+              </a>
+            </svg>
+          </button>
+          <button class="nav-icon-btn like" type="button">
+            <svg class="nav-icon like" fill="#262626" viewbox="0,0,48,48">
+              <a href="#">
+                <path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path>
+              </a>
+            </svg>
+          </button>
+          <button class="nav-icon-btn img">
+            <img class="nav-icon profile-image" alt="ununununu_s님의 프로필 사진" />
+          </button>
+        </div>
+
+      </nav>
+    </div>
+    <script src="js/main load.js"></script>
+    <script src="js/main function.js"></script>
+  </body>
+</html>
