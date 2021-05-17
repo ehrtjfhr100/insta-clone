@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width">
     <title>instagram</title> <!-- 페이지의 title을 적을 수 있겠죠 -->
     <link rel="shortcut icon" href="img/instagram.ico" type="image/x-icon"/> <!--이유모르겠지만 안됨-->
-    <link href="style/common.css" rel="stylesheet" type="text/css" />
     <link href="style/login.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
@@ -14,28 +13,28 @@
         <article class="phone-login">
           <div class="left-container">
             <div class="screen-images">
-              <img class="screenshot" src="img/screenimage1.jpg" alt="screen1"/>
-              <img class="screenshot" src="img/screenimage2.jpg" alt="screen2"/>
-              <img class="screenshot" src="img/screenimage3.jpg" alt="screen3"/>
-              <img class="screenshot" src="img/screenimage4.jpg" alt="screen4"/>
-              <img class="screenshot" src="img/screenimage5.jpg" alt="screen5"/>
+              <img class="screenshot 1 show" src="img/screenimage1.jpg" alt="screen1"/>
+              <img class="screenshot 2 wait" src="img/screenimage2.jpg" alt="screen2"/>
+              <img class="screenshot 3" src="img/screenimage3.jpg" alt="screen3"/>
+              <img class="screenshot 4" src="img/screenimage4.jpg" alt="screen4"/>
+              <img class="screenshot 5" src="img/screenimage5.jpg" alt="screen5"/>
             </div> 
           </div>
           <div class="right-container">
             <div class="login-section"> 
               <h1 class="word-mark">Instagram</h1> 
-              <div class="login-form1">
-                <form class="login-form2" id="login-form2">
+              <div class="login-div">
+                <form id="login-form">
                   <div class="login-labels">
-                    <label class="label" for="input email">
-                      <!-- <span class="labeltag">전화번호, 사용자 이름 또는 이메일</span> -->
-                      <input class="input email" type="text" placeholder="전화번호, 사용자 이름 또는 이메일"/>
+                    <label class="label id" for="input email">
+                      <span class="placeholder id">전화번호, 사용자 이름 또는 이메일</span>
+                      <input class="input id" type="text" name="userid"/>
                     </label>
-                    <label class="label" for="input password">
-                      <!-- <span class="labeltag">비밀번호</span> -->
-                      <input class="input password" type="text" placeholder="비밀번호"/>
+                    <label class="label pw" for="input password">
+                      <span class="placeholder pw">비밀번호</span>
+                      <input class="input pw" type="password" name="userpw"/>
                     </label>
-                    <button class="login-button">
+                    <button class="login-button" type="submit" onclick="check(this.form); return false;" value="login">
                       <div class="login-text">
                         로그인
                       </div>
@@ -44,13 +43,18 @@
                       <span class="or">또는</span>
                     </div>
                     <div>
-                      <button class=facebook-button>
+                      <button class="facebook-button">
                         <span class="facebook-icon"></span>
                         <span class="facebook-login">
                           Facebook으로 로그인
                         </span>
                       </button>
                     </div>
+                  </div>
+                  <div id="login-alert-box">
+                    <p id ="login-alert">
+                      입력한 사용자 이름을 사용하는 계정을 찾을 수 없습니다. 사용자 이름을 확인하고 다시 시도하세요.
+                    </p>
                   </div>
                   <a class="forgot-password">비밀번호를 잊으셨나요?</a>
                 </form>
