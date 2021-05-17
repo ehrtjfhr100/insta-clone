@@ -19,7 +19,7 @@ a {
 }
 /*왼쪽 컨테이너*/
 .left-container {
-  background-image: url("/img/background-image.png");
+  background-image: url("../img/background-image.png");
   background-size: 454px 618px;
   background-repeat: no-repeat;
   width: 454px;
@@ -89,7 +89,7 @@ a {
 }
 .word-mark {
   color: transparent;
-  background-image: url("/img/logo_text.png");
+  background-image: url("../img/logo_text.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 175px;

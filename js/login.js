@@ -95,7 +95,7 @@ const loginAlert = document.querySelector('#login-alert-box');
 
 function check(form){
 	if(form.userid.value == "happy" && form.userpw.value =="123456"){
-		window.location.replace("http://127.0.0.1:5500/main.html");
+		window.location.replace("https://ehrtjfhr100.github.io/insta-clone/main.html");
 	}else{
 		loginAlert.style.display = 'visible';
 	}
